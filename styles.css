@@ -1,0 +1,383 @@
+body, html {
+    height: 100%;
+    color:#FFFFFF;
+    font-family: "Lato", sans-serif;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hero.jpg");
+  
+  /* Set a specific height */
+  height: 90%;
+  
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+
+
+.nav-container{
+  clear:both;
+  overflow:auto;
+}
+
+nav{
+    float:right;
+}
+
+
+
+.logo img{
+    float:left;
+    width:200px;
+}
+
+ul li{
+  display: inline-block; padding:10px;
+  font-size:20px; 
+  font-family: "Lato", sans-serif;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px black;
+}
+
+ul li:hover{
+  color:orange;
+  
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.hero-button {
+    background-color: #F29F05;
+    color: white;
+    border: 1px solid #F29F05;
+    margin-top: 1rem;
+    padding: 0.9375rem 1.875rem;
+    font-family: "Monserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 200;
+    cursor: pointer;
+    text-decoration: none;
+}
+.hero-button:hover {
+    background-color: #f29f0571;
+    border: 1px solid #f29f0571;
+}
+
+
+/* section 2 */
+
+
+
+#section_2 {
+  color:#274340;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  display: flex;
+ flex-wrap: wrap;
+justify-content: space-evenly; 
+}
+.section_title{
+    text-align: center;
+    color:#274340;
+    font-size: 28px;
+    font-weight: normal ;
+}
+
+.section_2_desc{
+   margin: 50px;
+    text-align: center;
+    color:#274340;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
+.card_1, .card_2 {
+  height: 300px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+.btn {
+    display: block;
+    width: 150px;
+    margin:auto;
+    text-align: center;
+    text-transform: lowercase; 
+    color: #2F5652;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #2F5652;
+}
+
+ 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+  @media(min-width: 40rem) {
+    width: 50%;
+  }
+  @media(min-width: 56rem) {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 300px;
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
+}
+
+.card__title {
+  color: #2F5652;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+/* section 3 */
+
+.activites_btn{
+    display: block;
+    margin: auto;
+    color:#FFFFFF;
+    border: solid 1px #FFFFFF;
+   text-align: center; 
+   margin-top: 50px;
+  
+}
+
+.spring{
+    background-image:linear-gradient(rgba(242, 159, 5, 0.901), rgba(242, 159, 5, 0.901)), url("/images/trillium-3414588_1280.jpg");
+}
+
+.summer{
+    background-image: linear-gradient(rgba(85, 166, 217, 0.901), rgba(85, 166, 217, 0.901)),url("/images/summer_home.jpg");
+}
+
+.fall {
+    background-image: linear-gradient(rgba(242, 92, 5, 0.901), rgba(242, 92, 5, 0.901)),url("/images/fall_home.jpg");
+}
+
+.winter {
+    background-image: linear-gradient(rgba(90, 140, 135, 0.901), rgba(90, 140, 135, 0.901)),url("/images/winter_home.jpg");
+}
+
+.spring:hover  {
+    background-image:linear-gradient(rgba(242, 159, 5, 0.321), rgba(242, 159, 5, 0.321)), url("/images/trillium-3414588_1280.jpg");
+}
+
+.summer:hover  {
+    background-image: linear-gradient(rgba(85, 166, 217, 0.321), rgba(85, 166, 217, 0.321)),url("/images/summer_home.jpg");
+    
+    color: white;
+}
+
+.fall:hover {
+    background-image: linear-gradient(rgba(242, 92, 5, 00.321), rgba(242, 92, 5, 0.321)),url("/images/fall_home.jpg");
+}
+
+.winter:hover  {
+    background-image: linear-gradient(rgba(90, 140, 135, 0.321), rgba(90, 140, 135, 0.321)),url("/images/winter_home.jpg");
+}
+
+
+.title_row{
+    padding-top: 50px;
+    padding-bottom: 40px;
+} 
+.seasons_btn{
+    
+    color:#FFFFFF;
+}
+
+.outdoors{
+    color:#FFF;
+    text-align: center;
+}
+
+ #section_3{
+    background-image: linear-gradient(rgba(38, 58, 56, 0.936), rgba(90, 140, 135, 0.726)),url(/Users/cheralynciesielski/Desktop/Petoskey_site/images/forest-3622519_1280.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 90px;
+    box-sizing: border-box;
+} 
+  
+  /* Container for flexboxes */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create four equal columns */
+  .column {
+    flex: 25%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-height: 300px;
+  }
+
+   .seasons{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top:80px;
+   }
+
+  
+  /* On screens that are 9px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+
+
+
+
+/* linked pages*/
+
+
+
+
+
+.hero {
+    
+    /* Set a specific height */
+    height: 90%;
+    
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    margin-bottom: 70px;
+  }
+
+  .shopping{
+    margin-top: 60px;
+  }
+  .shopping_desc{
+    color:#274340;
+    text-align: center;
+    margin: 40px 150px 40px 150px;
+
+    
+  }
+  .area_btn{
+    display: block;
+  border: solid 1px #274340;
+  text-decoration:none;
+  padding: 15px 60px;
+  width:150px;
+ text-align: center;
+  color:#274340;
+  margin: auto;
+  margin-top:20px;
+  }
+
+
+  .shopping{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/shopping.jpg");
+  }
+
+  .dinning{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/chandlers.jpg");
+  }
+
+  .events {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/crowd-1056764_1280.jpg");
+  }
+
+  /* outdoor page */
+
+  .activites {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/kayak-963160_1280.jpg");
+  }
+
+  .events-btn {
+    /* color:#F29F05;
+    border: solid 1px #F29F05; */
+    padding: 20px 40px 20px 40px;
+    width: 20%;
+  }
